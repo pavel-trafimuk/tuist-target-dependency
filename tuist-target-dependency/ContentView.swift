@@ -6,11 +6,15 @@
 //
 
 import SwiftUI
+import moduleB
 
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
+            .onAppear {
+                print("\(classB.run())")
+            }
     }
 }
 

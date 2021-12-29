@@ -7,13 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19D57919277C5BD80077669E /* moduleB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D57913277C5BC70077669E /* moduleB.framework */; };
+		19D5791A277C5BDB0077669E /* moduleA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D5790D277C5BC10077669E /* moduleA.framework */; };
 		19FFD1E9277C4B6C007679DA /* tuist_target_dependencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FFD1E8277C4B6C007679DA /* tuist_target_dependencyApp.swift */; };
 		19FFD1EB277C4B6C007679DA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FFD1EA277C4B6C007679DA /* ContentView.swift */; };
 		19FFD1ED277C4B6D007679DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FFD1EC277C4B6D007679DA /* Assets.xcassets */; };
 		19FFD1F0277C4B6D007679DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19FFD1EF277C4B6D007679DA /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		19D5790C277C5BC10077669E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D57908277C5BC10077669E /* moduleA.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1A39D5524C5CAA39ADFE31B8;
+			remoteInfo = moduleA;
+		};
+		19D57912277C5BC70077669E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D5790E277C5BC70077669E /* moduleB.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A1DF17F5B141B84E578C85F4;
+			remoteInfo = moduleB;
+		};
+		19D57914277C5BD20077669E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D57908277C5BC10077669E /* moduleA.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CD417D8EFA4782D878B47EBF;
+			remoteInfo = moduleA;
+		};
+		19D57916277C5BD40077669E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19D5790E277C5BC70077669E /* moduleB.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B6F2DD3D9241D19102950D6;
+			remoteInfo = moduleB;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		19D57908277C5BC10077669E /* moduleA.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = moduleA.xcodeproj; path = moduleA/moduleA.xcodeproj; sourceTree = "<group>"; };
+		19D5790E277C5BC70077669E /* moduleB.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = moduleB.xcodeproj; path = moduleB/moduleB.xcodeproj; sourceTree = "<group>"; };
 		19FFD1E5277C4B6C007679DA /* tuist-target-dependency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tuist-target-dependency.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19FFD1E8277C4B6C007679DA /* tuist_target_dependencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tuist_target_dependencyApp.swift; sourceTree = "<group>"; };
 		19FFD1EA277C4B6C007679DA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +61,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19D5791A277C5BDB0077669E /* moduleA.framework in Frameworks */,
+				19D57919277C5BD80077669E /* moduleB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19D57909277C5BC10077669E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19D5790D277C5BC10077669E /* moduleA.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19D5790F277C5BC70077669E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19D57913277C5BC70077669E /* moduleB.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		19D57918277C5BD80077669E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		19FFD1DC277C4B6C007679DA = {
 			isa = PBXGroup;
 			children = (
+				19FFD1F6277C4C0A007679DA /* components */,
 				19FFD1E7277C4B6C007679DA /* tuist-target-dependency */,
 				19FFD1E6277C4B6C007679DA /* Products */,
+				19D57918277C5BD80077669E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +129,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		19FFD1F6277C4C0A007679DA /* components */ = {
+			isa = PBXGroup;
+			children = (
+				19D5790E277C5BC70077669E /* moduleB.xcodeproj */,
+				19D57908277C5BC10077669E /* moduleA.xcodeproj */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +152,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				19D57917277C5BD40077669E /* PBXTargetDependency */,
+				19D57915277C5BD20077669E /* PBXTargetDependency */,
 			);
 			name = "tuist-target-dependency";
 			productName = "tuist-target-dependency";
@@ -113,12 +186,39 @@
 			mainGroup = 19FFD1DC277C4B6C007679DA;
 			productRefGroup = 19FFD1E6277C4B6C007679DA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 19D57909277C5BC10077669E /* Products */;
+					ProjectRef = 19D57908277C5BC10077669E /* moduleA.xcodeproj */;
+				},
+				{
+					ProductGroup = 19D5790F277C5BC70077669E /* Products */;
+					ProjectRef = 19D5790E277C5BC70077669E /* moduleB.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				19FFD1E4277C4B6C007679DA /* tuist-target-dependency */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		19D5790D277C5BC10077669E /* moduleA.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = moduleA.framework;
+			remoteRef = 19D5790C277C5BC10077669E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		19D57913277C5BC70077669E /* moduleB.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = moduleB.framework;
+			remoteRef = 19D57912277C5BC70077669E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		19FFD1E3277C4B6C007679DA /* Resources */ = {
@@ -143,6 +243,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19D57915277C5BD20077669E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = moduleA;
+			targetProxy = 19D57914277C5BD20077669E /* PBXContainerItemProxy */;
+		};
+		19D57917277C5BD40077669E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = moduleB;
+			targetProxy = 19D57916277C5BD40077669E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		19FFD1F1277C4B6D007679DA /* Debug */ = {
